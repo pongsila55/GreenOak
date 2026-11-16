@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Oak Kindergarten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div>
+        <h1>GREEN OAK</h1>
+        <p>KINDERGARTEN SMART FARM SYSTEM</p>
+    </div>
+    <span id="connection">กำลังเชื่อมต่อ...</span>
+</header>
+
+<main class="container">
+
+    <section class="welcome">
+        <div>
+            <p>SMART FARM MONITORING</p>
+            <h2>Green Oak Dashboard</h2>
+            <span>ระบบดูแลผักกรีนโอ๊คอัตโนมัติ</span>
+        </div>
+        <div class="plant">🌱</div>
+    </section>
+
+    <section class="grid">
+
+        <div class="card">
+            <h3>SOIL MOISTURE</h3>
+            <div class="value"><span id="moisture">--</span>%</div>
+            <div class="progress">
+                <div id="moistureBar"></div>
+            </div>
+            <p id="soilText">รอข้อมูลจากเซ็นเซอร์</p>
+        </div>
+
+        <div class="card">
+            <h3>PUMP STATUS</h3>
+            <div class="status" id="pumpStatus">--</div>
+            <p>สถานะปั๊มน้ำ</p>
+        </div>
+
+        <div class="card">
+            <h3>AUTO MODE</h3>
+            <div class="status" id="autoMode">--</div>
+            <p>ระบบรดน้ำอัตโนมัติ</p>
+        </div>
+
+        <div class="card">
+            <h3>MANUAL PUMP</h3>
+            <div class="status" id="manualPump">--</div>
+            <p>สถานะควบคุมด้วยตนเอง</p>
+        </div>
+
+    </section>
+
+    <section class="card">
+        <h3>WATERING SETTINGS</h3>
+        <div class="setting">
+            <span>Start Watering</span>
+            <strong id="startValue">--%</strong>
+        </div>
+        <div class="setting">
+            <span>Stop Watering</span>
+            <strong id="stopValue">--%</strong>
+        </div>
+    </section>
+
+    <section class="card">
+        <h3>SENSOR INFORMATION</h3>
+        <div class="setting">
+            <span>Last ADC</span>
+            <strong id="adcValue">รอตั้งค่า</strong>
+        </div>
+        <div class="setting">
+            <span>Last Update</span>
+            <strong id="lastUpdate">--</strong>
+        </div>
+    </section>
+
+    <footer>
+        GREEN OAK KINDERGARTEN
+        <p>SMART FARM PROJECT</p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
