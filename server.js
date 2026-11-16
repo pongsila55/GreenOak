@@ -48,8 +48,9 @@ app.get("/api/status", async (req, res) => {
             stopValue: Number(stop),
             adcValue: null,
             lastUpdate: new Date().toLocaleString("th-TH", {
-    timeZone: "Asia/Bangkok"
-})
+                timeZone: "Asia/Bangkok"
+            })
+        });
 
     } catch (error) {
         console.error("Blynk connection error:", error.message);
@@ -63,7 +64,9 @@ app.get("/api/status", async (req, res) => {
             stopValue: null,
             adcValue: null,
             message: error.message,
-            lastUpdate: new Date().toLocaleString("th-TH")
+            lastUpdate: new Date().toLocaleString("th-TH", {
+                timeZone: "Asia/Bangkok"
+            })
         });
     }
 });
