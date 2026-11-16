@@ -47,8 +47,9 @@ app.get("/api/status", async (req, res) => {
             startValue: Number(start),
             stopValue: Number(stop),
             adcValue: null,
-            lastUpdate: new Date().toLocaleString("th-TH")
-        });
+            lastUpdate: new Date().toLocaleString("th-TH", {
+    timeZone: "Asia/Bangkok"
+})
 
     } catch (error) {
         console.error("Blynk connection error:", error.message);
